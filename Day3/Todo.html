@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="Todo.css">
+</head>
+<body>
+    <input type="text" id="taskInput" placeholder="할 일을 입력하세요">
+    <select id="prioritySelect">
+        <option value="low">낮음</option>
+        <option value="medium">보통</option>
+        <option value="high">높음</option>
+        <option value="veryHigh">아주 높음</option>
+    </select>
+    <button id="addBtn">할 일 추가하기</button>
+    <button id="showAll">전체 보기</button>
+    <button id="showDone">완료 보기</button>
+    <button id="showNotDone">미완료 보기</button>
+    <ul id="taskList"></ul>
+<script src="Todo.js"></script>
+</body>
+</html>
