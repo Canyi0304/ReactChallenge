@@ -1,5 +1,5 @@
 body {
-    background-color: #f3e5f5;
+    background: linear-gradient(to right, #f3e5f5, #fce4ec);
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -9,20 +9,23 @@ input[type="text"], select {
     width: 200px;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 button {
     margin: 10px 5px;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    background-color: #9c27b0;
+    border-radius: 50px;
+    background: linear-gradient(to right, #9c27b0, #7b1fa2);
     color: white;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 button:hover {
-    background-color: #7b1fa2;
+    box-shadow: 0 0 15px 4px rgba(154, 39, 176, 0.5);
+    transform: scale(1.05);
 }
 
 ul {
@@ -35,8 +38,9 @@ ul li {
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ddd;
-    background-color: #fce4ec;
-    border-radius: 5px;
+    background: linear-gradient(to right, #f3e5f5, #fce4ec);
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 #taskInput {
