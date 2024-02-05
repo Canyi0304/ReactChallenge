@@ -7,3 +7,6 @@
 
 # Day4
 ## Calender
+
+# Day6
+Image Slide (Carousel)
