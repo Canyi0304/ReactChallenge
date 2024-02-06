@@ -10,3 +10,6 @@
 
 # Day6
 Image Slide (Carousel)
+
+# Day7 
+Image infinite Slide (Carousel)
