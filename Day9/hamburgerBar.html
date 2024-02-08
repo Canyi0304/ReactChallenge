@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="hamburgerBar.css">
+    
+</head>
+<body>
+    <nav>
+        <div id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="smallScreenMenu" style="display: none;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul id="largeScreenMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </nav>
+    <script>
+        document.getElementById("menuToggle").addEventListener("click", function() {
+            var menu = document.getElementById("smallScreenMenu");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

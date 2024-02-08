@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+}
+
+#menuToggle {
+    display: none;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+}
+
+
+
+#largeScreenMenu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+#largeScreenMenu li {
+    padding: 10px;
+}
+
+#largeScreenMenu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#largeScreenMenu li a:hover {
+    color: #777;
+}
+
+#menuToggle input:checked ~ #smallScreenMenu {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    #menuToggle {
+        display: block;
+    }
+    #smallScreenMenu {
+        display: none;
+    }
+    #largeScreenMenu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #menuToggle {
+        display: none;
+    }
+    #smallScreenMenu {
+        display: none;
+    }
+    #largeScreenMenu {
+        display: flex;
+    }
+}
+
+#smallScreenMenu {
+    position: absolute;
+    top: 60px; /* 햄버거 바와의 거리를 조정 */
+    width: 100%;
+    background-color: white;
+    list-style-type: none;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+}
